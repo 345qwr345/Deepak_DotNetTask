@@ -1,0 +1,21 @@
+CREATE DATABASE db_Employees 
+USE db_Employees 
+
+CREATE TABLE Employees(  
+EmpCode INT IDENTITY PRIMARY KEY,  
+EmpName NVARCHAR(50),  
+Dob date,
+Doj date,
+Department NVARCHAR(10),  
+ReportTo NVARCHAR(max),
+ContactNo Int,
+ResignedDate date
+);  
+
+select * from Employees
+
+INSERT INTO Employees  
+VALUES  
+('Black Widow',getdate(),getdate(), 'C++','B',9876,getdate()),  
+('Michael Nolan',getdate(),getdate(), 'C-Sharp','B',9876,getdate()),  
+('Trevor DSouza',getdate(),getdate(), 'Asp.Net','B',9876,getdate())
